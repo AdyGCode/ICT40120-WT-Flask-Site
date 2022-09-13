@@ -76,31 +76,18 @@
         <h2>Content Header - eg chapter name</h2>
     </header>
     <main class="content">
-        <p>
-            <a href="{{ url_for('layout', number=1) }}">
-                Layout Demo 1
-            </a>
-        </p>
-        <p>
-            <a href="{{ url_for('layout', number=2) }}">
-                Layout Demo 2
-            </a>
-        </p>
-        <p>
-            <a href="{{ url_for('layout', number=3) }}">
-                Layout Demo 3
-            </a>
-        </p>
-        <p>
-            <a href="{{ url_for('layout', number=4) }}">
-                Layout Demo 4
-            </a>
-        </p>
-        <p>
-            <a href="{{ url_for('layout', number=5) }}">
-                Layout Demo 5
-            </a>
-        </p>
+
+        <article>
+            <p>Paragraph 1</p>
+            <p>Paragraph two</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Aliquam amet fugiat labore minus, numquam
+                quidem. Atque blanditiis cum dolore, dolores et,
+                exercitationem facere maxime nemo repudiandae saepe,
+                sapiente tempore unde.</p>
+        </article>
+
+        <!-- (p>{Paragraph $})*2+p>lorem -->
 
     </main>
     <footer class="content-header">

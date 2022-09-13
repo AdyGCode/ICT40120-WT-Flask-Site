@@ -9,7 +9,7 @@
     <title>Home | SITE_NAME</title>
 
     <!--
-    Filename: ./index.html
+    Filename: ./layout-1.html
     Project:  Session-04
     Author:   Adrian Gould <adrian.gould@nmtafe.wa.edu.au>
     Created:  9/08/2022
@@ -38,11 +38,33 @@
 <header class="site-header">
     <h1 class="branding logo">Logo</h1>
     <nav class="nav-site nav-right">
-        <a href="#" class="nav-button ">Home</a>
-        <a href="#" class="nav-button">First</a>
-        <a href="#" class="nav-button active">Second</a>
-        <a href="#" class="nav-button">Contact Us</a>
-        <a href="#" class="nav-button">Legal</a>
+        <a href="{{ url_for('index') }}"
+           class="nav-button active">
+            Home
+        </a>
+        <a href="{{ url_for('layout', number=1) }}"
+           class="nav-button">
+            Demo 1
+        </a>
+        <a href="{{ url_for('layout', number=2) }}"
+           class="nav-button">
+            Demo 2
+        </a>
+        <a href="{{ url_for('layout', number=3) }}"
+           class="nav-button">
+            Demo 3
+        </a>
+        <a href="{{ url_for('layout', number=4) }}"
+           class="nav-button">
+            Demo 4
+        </a>
+        <a href="{{ url_for('layout', number=5) }}"
+           class="nav-button">
+            Demo 5
+        </a>
+        <a href="{{ url_for('contact') }}" class="nav-button">Contact
+            Us</a>
+        <a href="{{ url_for('legal') }}" class="nav-button">Legal</a>
     </nav>
 </header>
 

@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 from livereload import Server
 
 config = {
@@ -18,9 +18,20 @@ def hello_world():
 def index():
     return render_template('index.html')
 
-@app.route('/index-v2')
-def index2():
-    return render_template('index-v2.html')
+
+@app.route('/layout/<int:number>')
+def layout(number):
+    return render_template(f'layout-{number}.html')
+
+
+@app.route('/contact')
+def contact():
+    return "No contact page"
+
+
+@app.route('/legal')
+def legal():
+    return "No legal page"
 
 
 if __name__ == '__main__':
