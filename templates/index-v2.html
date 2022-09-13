@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Home | SITE_NAME</title>
+
+    <!--
+    Filename: ./index.html
+    Project:  Session-04
+    Author:   Adrian Gould <adrian.gould@nmtafe.wa.edu.au>
+    Created:  9/08/2022
+    Version:  1.0
+    -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS Reset from https://elad2412.github.io/the-new-css-reset/ -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/reset.css') }}">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/site.css') }}">
+
+    <!-- JS (Deferred) -->
+
+</head>
+<body>
+<!-- header>h1+nav>a[href=#]{Link $}*5 -->
+<header class="site-header">
+    <h1 class="branding logo">Logo</h1>
+    <nav class="nav-site nav-right">
+        <a href="#" class="nav-button ">Home</a>
+        <a href="#" class="nav-button">First</a>
+        <a href="#" class="nav-button active">Second</a>
+        <a href="#" class="nav-button">Contact Us</a>
+        <a href="#" class="nav-button">Legal</a>
+    </nav>
+</header>
+
+<!-- div.container -->
+<div class="container width-80">
+    <main class="content">
+
+        <article class="article">
+            <header class="content-header">
+                <h2>Template V2</h2>
+            </header>
+            <p>This template has the navigation on the right of the
+                header.</p>
+            <footer class="content-footer">
+                <p>Content Footer - eg by-line / date</p>
+            </footer>
+        </article>
+
+        <article class="article">
+            <header class="content-header ">
+                <h2>Template V2</h2>
+            </header>
+            <p>This template has the navigation on the right of the
+                header.</p>
+            <ul class="pl-1">
+                <li class="xs">Extra Small</li>
+                <li class="sm">Small</li>
+                <li class="md">Medium (default)</li>
+                <li class="lg">Large</li>
+                <li class="xl">Extra Large</li>
+                <li class="xxl">2 XL</li>
+                <li class="xxxl">3 XL</li>
+                <li class="xxxxl">4 XL</li>
+            </ul>
+            <footer class="content-footer">
+                <p>Content Footer - eg by-line / date</p>
+            </footer>
+
+        </article>
+
+    </main>
+</div>
+
+<footer class="site-footer">
+    <div>
+        <p class="md">&copy; Copyright 2022 YOUR_NAME.</p>
+        <p class="sm">This site is part of my learning for Web
+            Technologies as part
+            of the ICT40120 Certificate IV in Information Technology
+            (Programming)</p>
+    </div>
+    <div>
+        <a class="link-footer sm"
+           href="./about">
+            About
+        </a>
+        <a class="link-footer sm"
+           href="./contact-us">
+            Contact
+        </a>
+        <a class="link-footer sm"
+           href="https://northmetrotafe.wa.edu
+        .au">North Metro TAFE
+        </a>
+        <a class="link-footer sm"
+           href="https://www.theodinproject.com">
+            The Odin Project
+        </a>
+    </div>
+</footer>
+</body>
+</html>

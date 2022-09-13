@@ -18,6 +18,10 @@ def hello_world():
 def index():
     return render_template('index.html')
 
+@app.route('/index-v2')
+def index2():
+    return render_template('index-v2.html')
+
 
 if __name__ == '__main__':
     app.config.from_mapping(config)
